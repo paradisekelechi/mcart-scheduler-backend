@@ -24,6 +24,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_24_154248) do
 
   create_table "people", force: :cascade do |t|
     t.string "name"
+    t.float "duration"
     t.bigint "appointment_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
